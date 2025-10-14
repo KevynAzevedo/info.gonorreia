@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gonorreia: Prevenção, Sintomas e Tratamento</title>
+    <!-- Carregamento do Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Configuração de fonte para Inter e melhor legibilidade */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Cor de fundo mais suave (slate-50) */
+        }
+        /* Estilo para o marcador do FAQ e Galeria */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details > summary::before {
+            content: '+';
+            margin-right: 0.8rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        details[open] > summary::before {
+            content: '−';
+        }
+    </style>
+</head>
+<body class="min-h-screen antialiased text-slate-800">
+
+    <!-- Cabeçalho com Navegação Fixa -->
+    <header class="bg-white/90 backdrop-blur-lg shadow-sm sticky top-0 z-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="#" class="flex items-center">
+                    <span class="text-xl font-bold text-teal-600">Info Gonorreia</span>
+                </a>
+                <nav class="hidden md:flex md:space-x-8">
+                    <a href="#sintomas" class="text-gray-600 hover:text-teal-600 font-medium transition-colors">Sintomas</a>
+                    <a href="#galeria" class="text-gray-600 hover:text-teal-600 font-medium transition-colors">Galeria</a>
+                    <a href="#transmissao" class="text-gray-600 hover:text-teal-600 font-medium transition-colors">Transmissão</a>
+                    <a href="#tratamento" class="text-gray-600 hover:text-teal-600 font-medium transition-colors">Tratamento</a>
+                    <a href="#prevencao" class="text-gray-600 hover:text-teal-600 font-medium transition-colors">Prevenção</a>
+                    <a href="#faq" class="text-gray-600 hover:text-teal-600 font-medium transition-colors">FAQ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="max-w-5xl mx-auto px-4 py-10 sm:px-6 lg:px-8">
+        
+        <!-- Seção de Abertura (Hero) -->
+        <section class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-800 mb-3">
+                Gonorreia: <span class="text-teal-600">Tudo o que Você Precisa Saber</span>
+            </h1>
+            <p class="text-lg text-slate-600 max-w-3xl mx-auto">Informação clara e direta é a melhor ferramenta para a sua saúde e prevenção.</p>
+            <img src="https://placehold.co/1200x300/14b8a6/ffffff?text=CUIDE-SE+%7C+INFORME-SE"
+                 alt="[Imagem de um banner de conscientização sobre IST com fundo verde-azulado e texto branco]"
+                 class="w-full rounded-2xl shadow-lg object-cover h-48 sm:h-64 mt-8 border-4 border-white">
+        </section>
+
+        <!-- Card de Aviso Importante -->
+        <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-5 rounded-lg shadow-md mb-12 flex items-start" role="alert">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-4 text-yellow-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+            <div>
+                <p class="font-bold text-lg">Atenção: Procure Ajuda Médica</p>
+                <p class="mt-1">Este conteúdo é apenas informativo. Ele **não substitui** a consulta com um profissional de saúde. Em caso de sintomas ou dúvidas, procure um médico ou um posto de saúde.</p>
+            </div>
+        </div>
+
+        <!-- Seções de Conteúdo -->
+        <div class="space-y-12">
+            <!-- 1. O que é? -->
+            <section id="agente" class="p-6 bg-white rounded-xl shadow-md ring-1 ring-slate-200 transition duration-300 hover:shadow-lg">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">1. O Que Causa a Gonorreia?</h2>
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <p class="text-slate-700 leading-relaxed md:w-3/4">
+                        A gonorreia é uma Infecção Sexualmente Transmissível (IST) muito comum, causada pela bactéria **<span class="font-semibold text-teal-700">Neisseria gonorrhoeae</span>**. Ela pode infectar o trato genital (colo do útero, uretra), a boca, a garganta e o ânus, afetando homens e mulheres de todas as idades.
+                    </p>
+                    <div class="md:w-1/4 flex justify-center">
+                        <img src="fotos/bacteria.jpeg"
+                             alt="[Imagem de uma representação visual da bactéria Neisseria gonorrhoeae]"
+                             class="w-28 h-28 rounded-full shadow-lg border-4 border-teal-100 object-cover">
+                    </div>
+                </div>
+            </section>
+            
+            <!-- 2. Sintomas -->
+            <section id="sintomas" class="p-6 bg-white rounded-xl shadow-md ring-1 ring-slate-200 transition duration-300 hover:shadow-lg">
+                <h2 class="text-3xl font-bold text-slate-800 mb-2">2. Sintomas (Fique Atento)</h2>
+                <p class="text-center bg-red-100 text-red-700 p-3 rounded-lg font-semibold mb-6">
+                    Muitas vezes, a gonorreia é **assintomática**, especialmente em mulheres. Não espere os sintomas aparecerem para se testar!
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <h3 class="font-bold text-xl text-teal-700 mb-3">Em Homens:</h3>
+                        <ul class="list-disc list-inside space-y-2 text-slate-700">
+                            <li>Sensação de ardência ou dor ao urinar.</li>
+                            <li>Secreção purulenta (pus) branca, amarela ou esverdeada no pênis.</li>
+                            <li>Dor ou inchaço nos testículos (menos comum).</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                        <h3 class="font-bold text-xl text-teal-700 mb-3">Em Mulheres:</h3>
+                        <ul class="list-disc list-inside space-y-2 text-slate-700">
+                            <li>Aumento do corrimento vaginal.</li>
+                            <li>Dor ou ardência ao urinar.</li>
+                            <li>Sangramento vaginal fora do período menstrual.</li>
+                            <li>Dor abdominal ou pélvica.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8 border-t border-red-200 pt-6">
+                     <h3 class="font-bold text-xl text-red-700 mb-3">Complicações da Gonorreia Não Tratada:</h3>
+                     <p class="text-slate-700">A ausência de tratamento pode levar a problemas graves e permanentes:</p>
+                     <ul class="list-disc list-inside ml-4 space-y-2 text-red-800 mt-3">
+                         <li><span class="font-semibold">Mulheres:</span> Doença Inflamatória Pélvica (DIP), que pode causar dor crônica, gravidez ectópica e **infertilidade**.</li>
+                         <li><span class="font-semibold">Homens:</span> Epididimite (inflamação dos canais que transportam esperma), podendo levar à **infertilidade**.</li>
+                         <li><span class="font-semibold">Ambos:</span> A infecção pode se espalhar para o sangue ou articulações, tornando-se uma condição de risco à vida.</li>
+                     </ul>
+                </div>
+            </section>
+            
+            <!-- NOVA SEÇÃO: Galeria de Imagens (Conteúdo Sensível) -->
+            <section id="galeria" class="p-6 bg-white rounded-xl shadow-md ring-1 ring-slate-200 transition duration-300 hover:shadow-lg">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">Galeria de Imagens (Casos Reais)</h2>
+                <!-- Aviso de Conteúdo Sensível -->
+                <div class="bg-red-100 border-l-4 border-red-500 text-red-800 p-5 rounded-lg shadow-sm mb-6" role="alert">
+                    <p class="font-bold text-lg flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+                        Aviso: Conteúdo Sensível
+                    </p>
+                    <p class="mt-1">A seção a seguir contém imagens clinicamente explícitas de casos de gonorreia, que podem ser perturbadoras. O objetivo é estritamente educacional. Prossiga com cautela.</p>
+                </div>
+
+                <!-- Acordeão para as imagens -->
+                <details class="border rounded-lg cursor-pointer transition-all duration-300">
+                    <summary class="font-semibold text-lg hover:text-teal-600 p-4 bg-slate-50 rounded-lg flex items-center">
+                        Clique para revelar/ocultar a galeria de imagens
+                    </summary>
+                    <div class="p-4 border-t bg-slate-50 rounded-b-lg">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                            <!-- Imagem 1 -->
+                            <div class="bg-white p-2 rounded-lg shadow">
+                                <img src="fotos/exemplo.jpeg" class="rounded-lg w-full">
+                                <p class="text-sm text-center mt-2 text-slate-600">Descrição do sintoma (ex: secreção uretral).</p>
+                            </div>
+                            <!-- Imagem 2 -->
+                            <div class="bg-white p-2 rounded-lg shadow">
+                                <img src="fotos/exemplo2.jpeg" class="rounded-lg w-full">
+                                <p class="text-sm text-center mt-2 text-slate-600">Descrição do sintoma (ex: inflamação ocular).</p>
+                            </div>
+                            <!-- Imagem 3 -->
+                            <div class="bg-white p-2 rounded-lg shadow">
+                                <img src="fotos/exemplo3.jpg" class="rounded-lg w-full">
+                                <p class="text-sm text-center mt-2 text-slate-600">Descrição do sintoma (ex: lesão na garganta).</p>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </section>
+
+
+            <!-- 3. Transmissão -->
+            <section id="transmissao" class="p-6 bg-white rounded-xl shadow-md ring-1 ring-slate-200 transition duration-300 hover:shadow-lg">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">3. Como é Transmitida?</h2>
+                <p class="text-slate-700 leading-relaxed mb-4">
+                    A transmissão ocorre principalmente pelo contato sexual (vaginal, anal ou oral) sem o uso de preservativo com uma pessoa infectada.
+                </p>
+                <ul class="list-none space-y-3">
+                    <li class="flex items-start"><span class="text-teal-500 font-bold mr-3">✔</span><strong>Relação Sexual Desprotegida:</strong> É a forma mais comum de contágio.</li>
+                    <li class="flex items-start"><span class="text-teal-500 font-bold mr-3">✔</span><strong>Transmissão Vertical:</strong> Uma mãe infectada pode transmitir a bactéria para o bebê durante o parto.</li>
+                </ul>
+            </section>
+
+            <!-- 4. Tratamento -->
+            <section id="tratamento" class="p-6 bg-white rounded-xl shadow-md ring-1 ring-slate-200 transition duration-300 hover:shadow-lg">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">4. Tratamento e Cura</h2>
+                <p class="font-semibold text-xl text-green-600 mb-4">
+                    Sim, a gonorreia tem tratamento e cura!
+                </p>
+                <p class="text-slate-700 leading-relaxed mb-4">
+                    O tratamento é feito com **antibióticos** prescritos por um profissional de saúde. É essencial seguir a recomendação médica e tomar todos os medicamentos, mesmo que os sintomas desapareçam.
+                </p>
+                <div class="border-l-4 border-red-500 pl-4 bg-red-50 p-4 rounded-md">
+                    <h3 class="font-bold text-lg text-red-700 mb-1">Cuidado com a Resistência a Antibióticos!</h3>
+                    <p class="text-red-800">A bactéria está se tornando mais resistente. **Nunca se automedique** ou interrompa o tratamento. Parceiros sexuais também devem ser testados e tratados para evitar a reinfecção.</p>
+                </div>
+            </section>
+
+            <!-- 5. Prevenção -->
+            <section id="prevencao" class="p-6 bg-white rounded-xl shadow-md ring-1 ring-slate-200 transition duration-300 hover:shadow-lg">
+                <h2 class="text-3xl font-bold text-slate-800 mb-4">5. Como se Prevenir?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div class="bg-teal-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-lg text-teal-800">Use Preservativo</h3>
+                        <p class="text-sm text-teal-700 mt-1">Use camisinha em todas as relações sexuais. É o método mais eficaz.</p>
+                    </div>
+                    <div class="bg-teal-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-lg text-teal-800">Faça Testes</h3>
+                        <p class="text-sm text-teal-700 mt-1">Realize exames de ISTs regularmente, principalmente se tiver novos parceiros.</p>
+                    </div>
+                    <div class="bg-teal-50 p-4 rounded-lg">
+                        <h3 class="font-bold text-lg text-teal-800">Converse</h3>
+                        <p class="text-sm text-teal-700 mt-1">Tenha um diálogo aberto sobre saúde sexual com seus parceiros.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 6. FAQ (Perguntas Frequentes) -->
+            <section id="faq" class="p-6 bg-white rounded-xl shadow-md ring-1 ring-slate-200 transition duration-300 hover:shadow-lg">
+                <h2 class="text-3xl font-bold text-slate-800 mb-6">6. Perguntas Frequentes (FAQ)</h2>
+                <div class="space-y-4">
+                    <details class="bg-slate-50 border rounded-lg p-4 cursor-pointer">
+                        <summary class="font-semibold text-lg hover:text-teal-600">Posso pegar gonorreia pelo beijo ou em banheiros?</summary>
+                        <p class="mt-3 text-slate-700">Não. A bactéria da gonorreia não sobrevive por muito tempo fora do corpo humano. A transmissão ocorre por contato sexual, não por assentos de vaso sanitário, beijos, piscinas ou compartilhamento de talheres.</p>
+                    </details>
+                    <details class="bg-slate-50 border rounded-lg p-4 cursor-pointer">
+                        <summary class="font-semibold text-lg hover:text-teal-600">Fiz o tratamento. A gonorreia pode voltar?</summary>
+                        <p class="mt-3 text-slate-700">Sim. O tratamento cura a infecção, mas não cria imunidade. Você pode ser reinfectado se tiver contato sexual desprotegido com alguém que tenha a bactéria. Por isso, é fundamental que seus parceiros também sejam tratados.</p>
+                    </details>
+                    <details class="bg-slate-50 border rounded-lg p-4 cursor-pointer">
+                        <summary class="font-semibold text-lg hover:text-teal-600">Como é feito o diagnóstico?</summary>
+                        <p class="mt-3 text-slate-700">O diagnóstico é simples e geralmente feito através de um exame de urina ou da análise de uma amostra de secreção coletada da área infectada (uretra, colo do útero, ânus ou garganta).</p>
+                    </details>
+                </div>
+            </section>
+
+            <!-- Chamada para Ação (Call to Action) -->
+            <section class="text-center bg-teal-600 text-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-3">Tem alguma dúvida ou sintoma?</h2>
+                <p class="mb-6 max-w-2xl mx-auto">Não hesite. Cuidar da sua saúde sexual é um ato de amor-próprio e respeito. Procure um profissional de saúde.</p>
+                <a href="#" class="bg-white text-teal-600 font-bold py-3 px-8 rounded-full shadow-md hover:bg-teal-50 transition-transform hover:scale-105 inline-block">Encontre um Posto de Saúde Perto de Você</a>
+            </section>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-slate-800 mt-16 py-8">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-400 text-sm">
+            <p>&copy; 2025 - Site Informativo de Saúde Sexual. Proteja-se. Busque sempre orientação médica.</p>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="to-top-button" title="Voltar ao topo" class="hidden fixed bottom-5 right-5 z-30 p-3 bg-teal-600 text-white rounded-full shadow-lg hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition-opacity duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+
+    <script>
+        // Lógica para o botão "Voltar ao Topo"
+        const toTopButton = document.getElementById('to-top-button');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                toTopButton.classList.remove('hidden');
+            } else {
+                toTopButton.classList.add('hidden');
+            }
+        });
+
+        toTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
+
